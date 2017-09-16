@@ -95,12 +95,13 @@ Now we understood how to create input layer of NN, Next, we'll see how to create
 
 Let's code this in TF
 
+
+```python  
 '''
     weights are of shape (3,4) because there are three features for each 
     sample/example and each feature needs to connect with 4 neurons in hidden
     layer_1
     '''
-```python    
     w1 = tf.convert_to_tensor(np.random.normal(size=(3,4))) #using numpy array
     #or
     w1 = tf.random_normal((3,4),name="w1")
